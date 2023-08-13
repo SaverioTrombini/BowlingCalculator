@@ -1,17 +1,17 @@
 package model;
 
 public class Turno {
-	
+
 	private int primoTiro;
 	private int secondoTiro;
 	private boolean strike;
 	private boolean spare;
-	
+
 	public Turno() {
 		this.setPrimoTiro(0);
 		this.setSecondoTiro(0);
-		this.strike=false;
-		this.spare=false;
+		this.strike = false;
+		this.spare = false;
 	}
 
 	public boolean isStrike() {
@@ -44,5 +44,5 @@ public class Turno {
 
 	public void setSecondoTiro(int secondoTiro) {
 		this.secondoTiro = secondoTiro;
-	}	
+	}
 }

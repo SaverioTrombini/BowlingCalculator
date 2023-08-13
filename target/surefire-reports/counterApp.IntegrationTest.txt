@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: counterApp.IntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE!
+counterApp.IntegrationTest.testPartitaTurnoTabelloneStrike()  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "model.Turno.isStrike()" because "this.partita[...]" is null
+	at model.Partita.aggiungiBonusStrike(Partita.java:55)
+	at model.Partita.aggiungiBonus(Partita.java:28)
+	at model.Partita.turnoBase(Partita.java:23)
+	at counterApp.IntegrationTest.testPartitaTurnoTabelloneStrike(IntegrationTest.java:30)
+

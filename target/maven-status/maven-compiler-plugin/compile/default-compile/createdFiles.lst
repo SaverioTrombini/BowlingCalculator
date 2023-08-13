@@ -1,0 +1,6 @@
+view\View.class
+counterApp\Main.class
+controller\Controller.class
+model\Turno.class
+model\Partita.class
+util\InserimentoDati.class

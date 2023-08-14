@@ -8,10 +8,6 @@ public class View {
 		System.out.println("turno:" + turnoAttuale);
 	}
 
-	public void stampaTiroBonus() {
-		System.out.println("tiro bonus");
-	}
-
 	public void stampaTabellone(int[] tabellone, int turnoAttuale) {
 	    int sum = 0;
 	    System.out.print("TABELLONE -> ");

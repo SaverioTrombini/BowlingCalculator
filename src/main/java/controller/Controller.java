@@ -18,20 +18,20 @@ public class Controller {
 			game.setTurnoAttuale(turno);
 			view.stampaTurno(game.getTurnoAttuale() + 1);
 			int primoTiro = InserimentoDati.richiestaValorePrimoTiro();
-
 			gestisciTurno(game.getTurnoAttuale(), primoTiro);
+			
 			gestisciStrike();
 			gestisciSpare();
 		}
 	}
 
-	private void gestisciTurno(int turnoAttuale, int ultimoTiro) {
-		if (ultimoTiro != 10 && turnoAttuale <= game.getPartita().length) {
+	private void gestisciTurno(int turnoAttuale, int primoTiro) {
+		if (primoTiro != 10 && turnoAttuale <= game.getPartita().length) {
 			int secondoTiro = InserimentoDati.richiestaValoreSecondoTiro();
-			game.turnoBase(turnoAttuale, ultimoTiro, secondoTiro);
+			game.turnoBase(turnoAttuale, primoTiro, secondoTiro);
 
-		} else if (ultimoTiro == 10) {
-			game.strike(ultimoTiro, turnoAttuale);
+		} else if (primoTiro == 10) {
+			game.strike(primoTiro, turnoAttuale);
 		}
 		view.stampaTabellone(game.getTabellone(), turnoAttuale);
 	}
